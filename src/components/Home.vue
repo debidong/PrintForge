@@ -1,6 +1,5 @@
 <template>
-  <el-header>Hello</el-header>
-  Hi
+  test
 </template>
   
 <script>
