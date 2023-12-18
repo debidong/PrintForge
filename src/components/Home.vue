@@ -2,25 +2,24 @@
   <el-row>
     <el-col :span="6" />
     <el-col :span="12">
-    <el-carousel :interval="5000" arrow="never">
-    <el-carousel-item v-for="(value, key) in infos" :key="key">
-      <div class="intro">
-        <el-card class="box-card">
-        <template #header>
-          <div class="card-header">
-            <span>{{ key }}</span>
+      <el-carousel :interval="5000" arrow="never">
+        <el-carousel-item v-for="(value, key) in infos" :key="key">
+          <div class="intro">
+            <el-card class="box-card">
+              <template #header>
+                <div class="card-header">
+                  <span>{{ key }}</span>
+                </div>
+              </template>
+              <div>
+                {{ value }}
+              </div>
+            </el-card>
           </div>
-        </template>
-        <div>
-          {{ value }}
-        </div>
-      </el-card>
-      </div>
-    </el-carousel-item>
-  </el-carousel>
+        </el-carousel-item>
+      </el-carousel>
     </el-col>
   </el-row>
-  
 </template>
   
 <script>

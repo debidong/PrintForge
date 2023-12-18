@@ -1,5 +1,5 @@
 <template>
-    test
+    <el-empty description="即将上线"/>
 </template>
 
 
